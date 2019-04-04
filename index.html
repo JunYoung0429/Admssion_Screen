@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Welcome</h1>
+    <button onclick="myFunction()">Click This Button</button>
+    <div id="snackbar"><a href="#">NEXT</a></div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById('snackbar')
+
+            x.className = "show";
+
+            setTimeout(function(){
+                x.className = x.className.replace("show");},1000000);
+        }
+    </script>
+</body>
+</html>
